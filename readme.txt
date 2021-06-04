@@ -7,5 +7,5 @@ if return 500 means server problem
 
 commands
 # remember this command it will return number
-curl -o /dev/null -s -w "%{http_code}" http://www.duckduckgo.com
+curl -o /dev/null --connect-timeout 3 -s -w "%{http_code}" http://www.duckduckgo.com
 
