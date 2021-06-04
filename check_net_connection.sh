@@ -18,7 +18,7 @@ for URL in $URL_LIST ; do
 			break
 		else 
 			echo "retry $URL "
-			FAIL_COUNT++
+			let FAIL_COUNT++
 		fi
 	done
 	# if it fails 3 times
